@@ -1,0 +1,76 @@
+.nav_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.navLinks_container {
+    width: 700px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30px;
+}
+
+.nav_links {
+    font-size: 23px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transform: translateX(-200%);
+    opacity: 0;
+    animation: slide-in-anim 1.5s ease-out forwards;
+}
+
+@keyframes slide-in-anim {
+    20% {
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-45%);
+    }
+    75% {
+        transform: translateX(-52%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: yellow;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navLink:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.light_container {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.light {
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+}

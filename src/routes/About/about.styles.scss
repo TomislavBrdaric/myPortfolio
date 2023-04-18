@@ -1,0 +1,67 @@
+.about {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 33px;
+    color: white;
+    width: 800px;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.text_container {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    width: 800px;
+    color: white;
+}
+
+.firstRow,
+.secondRow,
+.thirdRow,
+.fourthRow {
+    display: flex;
+    justify-content: space-around;
+}
+
+.firstRow {
+    .imageIcons {
+        width: 80px;
+    }
+}
+
+.secondRow {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .imageIcons {
+        width: 105px;
+        height: 100px;
+    }
+}
+
+.thirdRow {
+    justify-content: space-evenly;
+    #git {
+        width: 182px;
+        height: 82px;
+    }
+    #github {
+        width: 90px;
+    }
+}
+
+.image-container {
+    width: 700px;
+}
+
+.imageIcons {
+    width: 100px;
+}
+
+.mainIcon {
+    width: 470px;
+    margin-top: 15px;
+}
