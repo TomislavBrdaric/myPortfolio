@@ -22,11 +22,12 @@ const MainContent = () => {
                     <h3>"Enthusiastic Frontend Developer" </h3>
                     <div className='resume_container'>
                         <h2 id='resume'>
-                            <a href=''> RESUME </a>
+                            <a href='https://aquamarine-koressa-4.tiiny.site/'>
+                                RESUME
+                            </a>
                         </h2>
                         <div className='links'>
                             <a href='https://www.linkedin.com/in/tomislav-brdaric-b902a0242/'>
-                                {' '}
                                 <img
                                     className='link'
                                     src={liImage}
@@ -34,7 +35,6 @@ const MainContent = () => {
                                 />
                             </a>
                             <a href='https://www.instagram.com/fourshoesyeah/'>
-                                {' '}
                                 <img
                                     className='link'
                                     src={instaImage}
@@ -42,7 +42,6 @@ const MainContent = () => {
                                 />
                             </a>
                             <a href='https://github.com/TomislavBrdaric'>
-                                {' '}
                                 <img
                                     className='link'
                                     src={ghImage}

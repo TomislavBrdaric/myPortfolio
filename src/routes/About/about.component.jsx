@@ -18,7 +18,6 @@ import programerImg from '../../assets/computer-setting-3635143-3041090.png';
 import './about.styles.scss';
 
 const About = () => {
-    console.log('mounted');
     return (
         <Fragment>
             <div className='nav_container'>
