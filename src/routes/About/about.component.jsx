@@ -20,29 +20,33 @@ import './about.styles.scss';
 const About = () => {
     return (
         <Fragment>
-            <div className='nav_container'>
+            <div className='nav_container_about'>
                 <div className='about'>
                     <h1>ABOUT ME</h1>
                 </div>
-                <div className='navLinks_container'>
-                    <nav className='nav_links'>
-                        <NavLink to='/' element=<Home /> className='navLink'>
+                <div className='navLinks_container_about'>
+                    <nav className='nav_links_about'>
+                        <NavLink
+                            to='/'
+                            element=<Home />
+                            className='navLinkAbout'
+                        >
                             HOME
                         </NavLink>
-                        <NavLink to='/about' className='navLink'>
+                        <NavLink to='/about' className='navLinkAbout'>
                             ABOUT
                         </NavLink>
                         <NavLink
                             to='/projects'
                             element={<Projects />}
-                            className='navLink'
+                            className='navLinkAbout'
                         >
                             PROJECTS
                         </NavLink>
                         <NavLink
                             to='/contacts'
                             element={<Contacts />}
-                            className='navLink'
+                            className='navLinkAbout'
                         >
                             CONTACTS
                         </NavLink>

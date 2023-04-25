@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 80px;
 }
 
 .greeting {
@@ -102,12 +103,12 @@
             }
         }
         .image_container {
-            width: 50%;
+            width: 30%;
             align-self: center;
 
             #image {
-                width: 100%;
-                min-width: 470px;
+                width: 40%;
+                min-width: 420px;
             }
         }
     }
@@ -184,7 +185,36 @@
 @media (max-width: 700px) {
     .greeting_container {
         .greeting {
-            font-size: 24px;
+            font-size: 17px;
+        }
+        .image_container {
+            margin: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            #image {
+                width: 50%;
+                min-width: 200px;
+            }
+        }
+        .resume_container {
+            flex-direction: column;
+            #resume {
+                width: 30%;
+                height: 60%;
+
+                a {
+                    font-size: 1rem;
+                }
+            }
+            .links {
+                justify-content: space-evenly;
+                .link {
+                    width: 20px;
+                    padding-right: 0;
+                }
+            }
         }
     }
 }
