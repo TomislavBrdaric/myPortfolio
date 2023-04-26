@@ -82,6 +82,7 @@
         flex-direction: column;
         .light_container {
             align-self: center;
+            display: none;
             .light {
                 width: 160px;
                 height: 160px;
@@ -95,34 +96,29 @@
 }
 
 @media (max-width: 750px) {
-    .light_container {
-        width: 35%;
-        .light {
-            width: 150px;
-            height: 150px;
-        }
-    }
-
     .navLinks_container {
-        width: 65%;
-
+        width: 100%;
         .nav_links {
             font-size: 24px;
         }
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .nav_container {
-        .light_container {
-            .light {
-                width: 100px;
-                height: 100px;
-            }
-        }
         .navLinks_container {
             width: 100%;
-            padding-top: 20px;
+            .nav_links {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .nav_container {
+        .navLinks_container {
+            width: 100%;
             .nav_links {
                 font-size: 15px;
             }

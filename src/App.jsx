@@ -5,7 +5,6 @@ import Contacts from './routes/Contacts/contacts.components';
 
 import { Routes, Route } from 'react-router-dom';
 
-import './app.styles.scss';
 
 const App = () => {
     return (

@@ -117,15 +117,24 @@
 @media (max-width: 1020px) {
     .greeting_container {
         margin-top: 0;
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         .greeting {
             font-size: 28px;
+            width: 80%;
+            padding: 0;
+            text-align: center;
+
+            h1 {
+                margin: 0;
+            }
         }
 
         .resume_container {
+            justify-content: center;
+            width: 100%;
             #resume {
-                width: 30%;
+                width: 32%;
 
                 a {
                     font-size: 2.1rem;
@@ -133,18 +142,22 @@
             }
 
             .links {
+                width: 40%;
+
                 .link {
                     width: 45px;
                 }
             }
         }
         .image_container {
-            width: 50%;
+            width: 100%;
             margin: auto;
             margin-top: 50px;
+            display: flex;
+            justify-content: center;
             #image {
-                width: 100%;
-                min-width: 470px;
+                width: 25%;
+                min-width: 460px;
             }
         }
     }
@@ -157,8 +170,8 @@
         }
         .resume_container {
             #resume {
-                width: 30%;
-                height: 80%;
+                width: 150px;
+                height: 50px;
 
                 a {
                     font-size: 1.9rem;
@@ -166,7 +179,7 @@
             }
             .links {
                 .link {
-                    width: 40px;
+                    width: 35px;
                 }
             }
         }
@@ -185,35 +198,60 @@
 @media (max-width: 700px) {
     .greeting_container {
         .greeting {
-            font-size: 17px;
-        }
-        .image_container {
-            margin: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-
-            #image {
-                width: 50%;
-                min-width: 200px;
-            }
+            font-size: 24px;
         }
         .resume_container {
-            flex-direction: column;
+            display: inline;
+            align-items: center;
+
             #resume {
-                width: 30%;
-                height: 60%;
+                margin: auto;
+                margin-bottom: 25px;
+            }
+            .links {
+                width: 100%;
+                margin: auto;
+                padding-left: 30px;
+            }
+        }
+        .image_container {
+            width: 40%;
+            margin-top: 50px;
+            #image {
+                min-width: 360px;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .greeting_container {
+        .greeting {
+            font-size: 22px;
+        }
+        .resume_container {
+            #resume {
+                width: 120px;
+                height: 50px;
 
                 a {
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                 }
             }
             .links {
-                justify-content: space-evenly;
+                width: 90%;
                 .link {
-                    width: 20px;
-                    padding-right: 0;
+                    width: 25px;
                 }
+            }
+        }
+
+        .image_container {
+            width: 30%;
+            margin-top: 50px;
+            #image {
+                width: 100%;
+                min-width: 250px;
             }
         }
     }
