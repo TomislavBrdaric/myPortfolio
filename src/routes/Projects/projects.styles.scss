@@ -17,6 +17,7 @@
 
     .page {
         width: 50%;
+        min-width: 260px;
         margin-top: 50px;
         margin-bottom: 100px;
         text-align: center;
@@ -34,7 +35,7 @@
     }
 
     .page:hover {
-        transform: scale(1.2);
+        transform: scale(1.15);
     }
 }
 
