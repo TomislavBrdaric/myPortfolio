@@ -78,6 +78,10 @@
     width: 800px;
     color: white;
     animation: slide-animation 1.2s ease-in forwards;
+
+    h3 {
+        margin-top: 0;
+    }
 }
 
 .firstRow,
