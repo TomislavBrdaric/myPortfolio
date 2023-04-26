@@ -17,37 +17,37 @@ import './projects.styles.scss';
 const Projects = () => {
     return (
         <Fragment>
-            <div className='nav_container_projects'>
+            <div className='nav_container_about'>
                 <div className='projects'>
                     <h1>PROJECTS</h1>
                 </div>
-                <div className='navLinks_container_projects'>
-                    <nav className='nav_links_projects'>
+                <div className='navLinks_container_about'>
+                    <nav className='nav_links_about'>
                         <NavLink
                             to='/'
                             element=<Home />
-                            className='navLinkProject'
+                            className='navLinkAbout'
                         >
                             HOME
                         </NavLink>
                         <NavLink
                             to='/about'
                             element=<About />
-                            className='navLinkProject'
+                            className='navLinkAbout'
                         >
                             ABOUT
                         </NavLink>
                         <NavLink
                             to='/projects'
                             element={<Projects />}
-                            className='navLinkProject'
+                            className='navLinkAbout'
                         >
                             PROJECTS
                         </NavLink>
                         <NavLink
                             to='/contacts'
                             element={<Contacts />}
-                            className='navLinkProject'
+                            className='navLinkAbout'
                         >
                             CONTACTS
                         </NavLink>

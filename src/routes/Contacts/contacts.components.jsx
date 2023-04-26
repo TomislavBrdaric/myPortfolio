@@ -33,37 +33,37 @@ const Contacts = () => {
     };
     return (
         <Fragment>
-            <div className='nav_container_contact'>
+            <div className='nav_container_about'>
                 <div className='contact'>
                     <h1>CONTACT ME</h1>
                 </div>
-                <div className='navLinks_container_contact'>
-                    <nav className='nav_links_contact'>
+                <div className='navLinks_container_about'>
+                    <nav className='nav_links_about'>
                         <NavLink
                             to='/'
                             element=<Home />
-                            className='navLinkcontact'
+                            className='navLinkAbout'
                         >
                             HOME
                         </NavLink>
                         <NavLink
                             to='/about'
                             element=<About />
-                            className='navLinkcontact'
+                            className='navLinkAbout'
                         >
                             ABOUT
                         </NavLink>
                         <NavLink
                             to='/projects'
                             element=<Projects />
-                            className='navLinkcontact'
+                            className='navLinkAbout'
                         >
                             PROJECTS
                         </NavLink>
                         <NavLink
                             to='/contacts'
                             element={<Contacts />}
-                            className='navLinkcontact'
+                            className='navLinkAbout'
                         >
                             CONTACTS
                         </NavLink>
