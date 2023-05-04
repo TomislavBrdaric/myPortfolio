@@ -3,7 +3,7 @@ import './MainContent.styles.scss';
 import NavBar from './NavBar.component';
 
 import picture from '../assets/IMG_20230413_144158.png';
-import liImage from '../assets/linkedin.svg';
+import liImage from '../assets/linkedin.png';
 import instaImage from '../assets/1200px-Instagram.svg.png';
 import ghImage from '../assets/Github-circle_(CoreUI_Icons_v1.0.0).svg.png';
 

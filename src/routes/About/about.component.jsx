@@ -12,7 +12,7 @@ import scssImg from '../../assets/2560px-Sass_Logo_Color.svg.png';
 import reactImg from '../../assets/React-icon.svg.png';
 import viteImg from '../../assets/vite.svg';
 import gitImg from '../../assets/1280px-Git-logo.svg.png';
-import githubImg from '../../assets/Github-circle_(CoreUI_Icons_v1.0.0).svg.png';
+import githubImg from '../../assets/Github-circle2_(CoreUI_Icons_v1.0.0).svg.png';
 import programerImg from '../../assets/computer-setting-3635143-3041090.png';
 
 import './about.styles.scss';
