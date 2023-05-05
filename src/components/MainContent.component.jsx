@@ -16,7 +16,7 @@ const MainContent = () => {
             <div className='greeting_container'>
                 <div
                     className='greeting'
-                    style={{ color: color ? 'yellow' : 'white' }}
+                    style={{ color: color ? 'rgb(247, 243, 12)' : 'white' }}
                 >
                     <h1>HI, I'M TOMI</h1>
                     <h3>"Enthusiastic Frontend Developer" </h3>
