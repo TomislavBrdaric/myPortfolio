@@ -1,6 +1,8 @@
 import React, { useRef, Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Home from '../Home/home.component';
 import Projects from '../Projects/projects.component';
@@ -10,6 +12,17 @@ import './contacts.styles.scss';
 
 const Contacts = () => {
     const form = useRef();
+    const notify = () =>
+        toast.success('Email sent', {
+            position: 'top-center',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light',
+        });
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -26,6 +39,7 @@ const Contacts = () => {
                     console.log(result.text);
                     console.log('message sent');
                     form.current.reset();
+                    notify();
                 },
                 (error) => {
                     console.log(error.text);
@@ -81,6 +95,18 @@ const Contacts = () => {
                     <textarea className='message' name='message' />
                     <input className='submit' type='submit' value='Send' />
                 </form>
+                <ToastContainer
+                    position='top-center'
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme='light'
+                />
             </div>
         </Fragment>
     );
