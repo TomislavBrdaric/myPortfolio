@@ -80,7 +80,7 @@
     animation: slide-animation 1.2s ease-in forwards;
 
     h3 {
-        margin-top: 0;
+        margin: 0;
     }
 }
 
@@ -138,6 +138,14 @@
         .about {
             margin-top: 30px;
             width: 50%;
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .text_container {
+        h3 {
+            margin-bottom: 30px;
         }
     }
 }
