@@ -25,6 +25,7 @@ const Contacts = () => {
                 (result) => {
                     console.log(result.text);
                     console.log('message sent');
+                    form.current.reset();
                 },
                 (error) => {
                     console.log(error.text);
